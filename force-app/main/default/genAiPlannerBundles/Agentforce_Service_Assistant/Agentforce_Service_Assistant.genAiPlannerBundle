@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlannerBundle xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <description>Help your customer service representatives resolve cases faster with an AI-generated list of suggested resolution steps grounded in your organization&apos;s policies and practices.</description>
+    <localActionLinks>
+        <genAiFunctionName>AnswerQuestionsWithKnowledge_16jaj000003YAuT</genAiFunctionName>
+    </localActionLinks>
+    <localTopicLinks>
+        <genAiPluginName>Travel_Documentation_16jaj000003YAuT</genAiPluginName>
+    </localTopicLinks>
+    <localTopics>
+        <fullName>Travel_Documentation_16jaj000003YAuT</fullName>
+        <canEscalate>false</canEscalate>
+        <description>Assist service reps in helping customers in navigating the visa application process, including required documents, application procedures, document validity, submission process, processing times, and embassy contact information. Questions are related to visa requirements, which include required documents, application procedures, document validity, submission process, processing times, and embassy contact information.</description>
+        <developerName>Travel_Documentation_16jaj000003YAuT</developerName>
+        <genAiPluginInstructions>
+            <description>If the customer has all the required documents, verify their validity and completeness in the verification portal.</description>
+            <developerName>instruction_1</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>Instruction 1</masterLabel>
+            <sortOrder>1</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Always check if the customer needs a visa and vaccinations for their destination.</description>
+            <developerName>instruction_2</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>Instruction 2</masterLabel>
+            <sortOrder>2</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>For questions about the submission process, tell the customer where and how to submit the application both in the company’s travel verification portal and through the destination country’s visa website. Always include a link to the official embassy website for the destination country for detailed information and application procedures.</description>
+            <developerName>instruction_3</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>Instruction 3</masterLabel>
+            <sortOrder>3</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>When you have confirmed the visa requirements, always provide the customer with a checklist of all required documents such as a passport, port entry forms, visa application form, recent passport photos, and proof of travel.</description>
+            <developerName>instruction_4</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>Instruction 4</masterLabel>
+            <sortOrder>4</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>If the destination country requires additional documents such as a letter of invitation or proof of financial means, inform the customer and provide guidance on how to obtain these.</description>
+            <developerName>instruction_5</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>Instruction 5</masterLabel>
+            <sortOrder>5</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>After the application is submitted, provide the customer with a follow-up plan, including expected processing times and contact information for the embassy.</description>
+            <developerName>instruction_6</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>Instruction 6</masterLabel>
+            <sortOrder>6</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Provide travel tips and advice on what to expect during the visa interview, if required.</description>
+            <developerName>instruction_7</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>Instruction 7</masterLabel>
+            <sortOrder>7</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Always be sure to thank the customer for choosing our company and provide a link to our survey on the service to help improve future assistance.</description>
+            <developerName>instruction_8</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>Instruction 8</masterLabel>
+            <sortOrder>8</sortOrder>
+        </genAiPluginInstructions>
+        <language>en_US</language>
+        <localDeveloperName>Travel_Documentation</localDeveloperName>
+        <masterLabel>Travel Documentation</masterLabel>
+        <pluginType>Topic</pluginType>
+        <scope>Your job is to assist service reps in providing customers with the visa application process and related travel documents. Make sure they have all the right documents, information, and follow all the rules and procedures. You must not provide legal advice or handle inquiries outside of visa applications.</scope>
+    </localTopics>
+    <masterLabel>Agentforce Service Assistant</masterLabel>
+    <plannerActions>
+        <fullName>AnswerQuestionsWithKnowledge_16jaj000003YAuT</fullName>
+        <description>Answers questions about company policies and procedures, troubleshooting steps, or product information. For example: “What is your return policy?” “How do I fix an issue?” or “What features does a product have?”</description>
+        <developerName>AnswerQuestionsWithKnowledge_16jaj000003YAuT</developerName>
+        <invocationTarget>streamKnowledgeSearch</invocationTarget>
+        <invocationTargetType>standardInvocableAction</invocationTargetType>
+        <isConfirmationRequired>false</isConfirmationRequired>
+        <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+        <localDeveloperName>AnswerQuestionsWithKnowledge</localDeveloperName>
+        <masterLabel>Answer Questions with Knowledge</masterLabel>
+        <progressIndicatorMessage>Getting answers</progressIndicatorMessage>
+        <source>EmployeeCopilot__AnswerQuestionsWithKnowledge</source>
+    </plannerActions>
+    <plannerType>AiCopilot__ReAct</plannerType>
+</GenAiPlannerBundle>
